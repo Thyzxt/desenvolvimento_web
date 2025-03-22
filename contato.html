@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Projeto de Portifólio 1</title>
+
+</head>
+
+<body style="background-color: #321bad;">
+
+    <nav id="nav_menu">
+
+        <div id="div_menu_logo">
+
+            <img src="img/logo_do_site.jpg" alt="logo">
+
+        </div>
+
+        <div class="div_menu">
+
+            <a href="index.html">Home</a>
+            
+            <a href="sobre.html">Sobre Nós</a>
+            
+            <a href="servicos.html">Serviços</a>
+            
+            <a href="politica.html">Política</a>
+            
+            <a href="contato.html" id="div_menu_contato">Contato</a>
+
+        </div>
+
+    </nav>
+
+    <div style="background-image: url('img/imagem_contato.jpeg');" class="imagem_fundo">
+
+        <span>Contate-nos</span>
+
+        <span class="traco"></span>
+    
+        <span id="span_texto">Para que sua empresa alcance o sucesso</span>
+
+    </div>
+
+    <div class="div_alinhar_conteudo">
+
+        <section class="section_formulario">
+            
+            <div class="div_img_contato">
+                
+                <img src="img/aperto-de-mao.png" alt="aperto de mao">
+
+                <img src="img/modelo-de-negocios.png" alt="negocios">
+
+                <img src="img/mercado-em-alta.png" alt="sucesso">
+
+            </div>
+            
+            <div class="div_formulario_contato">
+
+                <div style="margin-bottom: 20px;">
+
+                    <h2>Preencha o formulário abaixo</h2>
+
+                </div>
+                
+                <form action="" method="post">
+
+                    <div class="">
+
+                        <label for="nome"></label>
+                        <input type="text" name="nome" placeholder="Nome*" id="nome" required>
+
+                    </div>
+                
+                    <br>
+
+                    <div>
+
+                        <label for="email"></label>
+                        <input type="email" name="email" placeholder="E-mail*" id="pass" required>
+
+                    </div>
+
+                    <br>
+
+                    <div>
+
+                        <label for="telefone"></label>
+                        <input type="tel" name="telefone" placeholder="Telefone*" id="telefone" required>
+
+                    </div>
+        
+                    <br>
+
+                    <div class="div_select_contato">
+
+                        <label for="cidade"></label>
+                        <select name="cidade" id="cidade" style="margin-right: 80px;" required>
+                        
+                            <option value="">Selecione o estado</option>
+                            <option value="ES">ES</option>
+                            <option value="MG">MG</option>
+                            <option value="PR">PR</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RS">RS</option>
+                            <option value="SC">SC</option>
+                            <option value="SP">SP</option>
+    
+                        </select>
+
+                        <label for="assunto"></label>
+                        <select name="Assunto" id="assunto" required>
+                        
+                            <option value="">Selecione um assunto</option>
+                            <option value="Comercial">Comercial</option>
+                            <option value="Financeiro">Financeiro</option>
+                            <option value="Parcerias">Parcerias</option>
+                            <option value="Suporte">Suporte Técnico</option>
+                            <option value="Outros">Outros</option>
+    
+                        </select>
+                        
+                    </div>
+
+                    <br>
+
+                    <div class="mensagem">
+
+                        <label for="mensagem"></label>
+                        <textarea type="text" name="mensagem" placeholder="Mensagem" rows="4" cols="61"></textarea>
+
+                    </div>
+                    
+                    <div class="div_label_politica">
+                        
+                        <input type="checkbox" name="check" id="check" required>
+                        <label id="label_politica" for="check">Ao enviar essas informações eu entendi e aceito a Política de Privacidade.</label>
+
+                    </div>        
+
+                    <button id="button_formulario" type="submit" onclick="exibe()"> 
+                        
+                        <span>Enviar</span>
+                    
+                    </button>
+                
+                </form>
+                
+            </div>
+
+        </section>
+
+    </div>
+
+    <footer class="rodape">
+
+        <div id="div_rodape_logo">
+
+            <img style="width: 93%;" src="img/logo_do_site.jpg" alt="logo">
+
+        </div>
+
+        <div class="div_politicas">
+
+            <a href="">Política de privacidade</a>
+
+            <p>© Todos os direitos autorais reservados</p>
+
+        </div>
+
+        <div class="div_sociais">
+            
+            <div class="rede_social">
+                
+                <a href="https://www.facebook.com/" title="Seguir no Facebook">
+                    
+                    <img src="img/facebook.png" alt="face">
+
+                </a>
+            
+            </div>
+
+            <div class="rede_social">
+            
+                <a href="https://www.instagram.com/" title="Seguir no Instagram">
+                
+                    <img src="img/instagram.png" alt="insta">
+        
+                </a>
+
+            </div>
+
+            <div class="rede_social">
+                
+                <a href="https://www.youtube.com/" title="Seguir no Youtube">
+                    
+                    <img src="img/youtube.png" alt="youtube">
+        
+                </a>
+
+            </div>
+
+            <div class="rede_social">
+                
+                <a href="https://www.linkedin.com/" title="Seguir no Linkedin">
+                    
+                    <img src="img/linkedin.png" alt="linkedin">
+        
+                </a>
+            
+            </div>
+    
+        </div>
+
+    </footer>
+
+    <div class="whats">
+        
+        <a onclick="mostrarDiv();">
+            
+            <img src="img/whatsapp.png" alt="whatsapp">
+        
+        </a>
+
+    </div>
+
+    <div id="mensagemDiv" class="whats_mensagem" style="display: none;">
+        
+        <img src="img/whats2.png" alt="whatsapp">
+            
+        <a href="https://web.whatsapp.com/">Entre em contato e tire suas dúvidas via WhatsApp!</a>   
+        
+        <span class="fechar_whats" onclick="fecharWhats()">X</span>
+        
+    </div>
+
+    <script src="js/codigos.js"></script>
+    
+</body>
+
+</html>
