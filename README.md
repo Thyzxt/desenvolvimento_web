@@ -1,1 +1,1 @@
-thyzxt.github.io/desenvolvimento_web/
+https://thyzxt.github.io/desenvolvimento_web/
